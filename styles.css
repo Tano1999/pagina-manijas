@@ -1,0 +1,669 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "ralewayregular";
+  text-decoration: none;
+  list-style: none;
+}
+@font-face {
+  font-family: "ralewaylight";
+  src: url("fonts/raleway/raleway-light-webfont.eot");
+  src: url("fonts/raleway/raleway-light-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/raleway/raleway-light-webfont.woff2") format("woff2"),
+    url("fonts/raleway/raleway-light-webfont.woff") format("woff"),
+    url("fonts/raleway/raleway-light-webfont.ttf") format("truetype"),
+    url("fonts/raleway/raleway-light-webfont.svg#ralewaylight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ralewayregular";
+  src: url("fonts/raleway/raleway-regular-webfont.eot");
+  src: url("fonts/raleway/raleway-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/raleway/raleway-regular-webfont.woff2") format("woff2"),
+    url("fonts/raleway/raleway-regular-webfont.woff") format("woff"),
+    url("fonts/raleway/raleway-regular-webfont.ttf") format("truetype"),
+    url("fonts/raleway/raleway-regular-webfont.svg#ralewayregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ralewaysemibold";
+  src: url("fonts/raleway/raleway-semibold-webfont.eot");
+  src: url("fonts/raleway/raleway-semibold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/raleway/raleway-semibold-webfont.woff2") format("woff2"),
+    url("fonts/raleway/raleway-semibold-webfont.woff") format("woff"),
+    url("fonts/raleway/raleway-semibold-webfont.ttf") format("truetype"),
+    url("fonts/raleway/raleway-semibold-webfont.svg#ralewaysemibold")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "websymbolsregular";
+  src: url("fonts/websymbols-regular-webfont.eot");
+  src: url("fonts/websymbols-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/websymbols-regular-webfont.woff") format("woff"),
+    url("fonts/websymbols-regular-webfont.ttf") format("truetype"),
+    url("fonts/websymbols-regular-webfont.svg#websymbolsregular") format("svg");
+
+  font-style: normal;
+  font-weight: normal;
+}
+.blog {
+  font-family: "websymbolsregular";
+  margin-right: 10px;
+  font-size: 30px;
+}
+.simbolo {
+  font-family: "websymbolsregular";
+  font-size: 40px;
+  line-height: 100px;
+}
+#cajasim {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+}
+#cajatext {
+  width: 100%;
+  height: 50%;
+}
+body {
+  background-color: white;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 20px 20px 0px 0px;
+  margin-bottom: 10px;
+}
+#header #barr ul {
+  display: flex;
+  width: 100%;
+}
+#header #barr ul li {
+  font-size: 19px;
+  list-style: none;
+  text-decoration: none;
+  padding-right: 15px;
+  padding-left: 15px;
+  height: 100%;
+  transition: 300ms;
+  line-height: 80px;
+}
+#header #barr ul li:hover {
+  background-color: #37bbf9;
+  color: white;
+  cursor: pointer;
+}
+
+#header #barr ul li {
+  text-decoration: none;
+  color: #222222;
+}
+
+#header #logot a h3 {
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 35px;
+  line-height: 35px;
+  background-color: #37bcf9;
+  text-shadow: 0px 0px 1px black;
+  font-size: 25px;
+  border-radius: 40px;
+  transition: 500ms;
+  margin-top: 25px;
+}
+
+#header #logot:hover a h3 {
+  box-shadow: 0px 0px 2px white inset;
+  text-shadow: 1px 1px 10px rgb(3, 3, 5);
+  cursor: pointer;
+  background-color: #222222;
+}
+
+#header .logoplast {
+  width: 300px;
+  height: 90px;
+}
+#banner {
+  margin-left: 55px;
+  margin-right: 55px;
+  display: flex;
+  height: 240px;
+  margin-top: 20px;
+}
+
+#banner img {
+  width: 50%;
+  height: 240px;
+}
+#banner .img1 {
+  width: 50%;
+  height: 238px;
+  border: 1px solid rgba(209, 209, 209, 0.89);
+  color: #222222;
+  background-color: rgba(209, 209, 209, 0.384);
+}
+#banner .img1 h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 60px;
+}
+#banner .img1 h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 21px;
+}
+
+#menu {
+  width: 90%;
+  margin-left: 5%;
+  height: 250px;
+  margin-top: 3%;
+  display: flex;
+  margin-bottom: 3%;
+  justify-content: space-between;
+}
+#menu a {
+  list-style: none;
+  text-decoration: none;
+  width: 30%;
+}
+#menu a .articulo {
+  border: 0.5px solid rgba(187, 186, 186, 0.63);
+  height: 250px;
+  width: 100%;
+  min-width: 17%;
+  background-image: url(img/fondobanner9.png);
+  background-position: 0%;
+  animation: backbanner 40s infinite;
+  box-shadow: 0px 0px 4px rgb(163, 163, 163);
+  overflow: hidden;
+}
+
+#menu a .articulo:hover {
+  cursor: pointer;
+  background-image: none;
+  background-color: #37bbf9;
+}
+
+a .articulo #cajasim .simbolo {
+  transition: all 400ms;
+  overflow: hidden;
+  color: #000000;
+  transition: all 500ms;
+}
+
+a .articulo:hover #cajasim .simbolo {
+  color: #222222;
+  animation: backsimbol 400ms linear;
+  font-size: 50px;
+}
+
+@keyframes backsimbol {
+  from {
+    transform: translateY(-200%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+#menu a .articulo h2 {
+  font-size: 19px;
+  text-align: center;
+  color: #252c31;
+}
+#menu a .articulo p {
+  text-align: center;
+  margin-top: 10px;
+  color: #202b33;
+  max-height: max-content;
+}
+
+#pie {
+  background-color: #222222;
+  display: flex;
+}
+
+.pies {
+  width: 20%;
+  padding: 30px;
+  text-align: center;
+  margin-left: 6%;
+}
+
+.pies h2 {
+  color: white;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  padding: 12px 6px;
+  font-family: "ralewaysemibold";
+}
+
+#pie1 ul li {
+  text-align: center;
+  margin-top: 15px;
+  border-bottom: 1px solid rgb(199, 198, 198);
+  padding: 10px;
+  list-style: none;
+}
+#pie1 ul li a {
+  color: #37bbf9;
+  font-size: 25px;
+}
+.imghtml {
+  width: 200px !important;
+}
+#pie3 img {
+  width: 30px;
+}
+#pie3 .gif {
+  width: 200px;
+}
+#pie3 p {
+  color: white;
+}
+
+#contenvios h2 {
+  text-align: center;
+  font-size: 35px;
+  padding: 10px;
+  font-family: "ralewaysemibold";
+  background-color: #222222;
+  color: white;
+  margin-top: 5px;
+  margin-left: 55px;
+  margin-right: 55px;
+}
+#contenvios #contenidoenvios {
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-bottom: 15px;
+  display: flex;
+  border: 1px solid rgba(209, 209, 209, 0.89);
+}
+
+#contenvios #contenidoenvios h3 {
+  text-align: center;
+  margin-top: 100px;
+}
+#contenvios #contenidoenvios #textenvio p {
+  color: #222222;
+  text-align: justify;
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#contnosotros h2 {
+  text-align: center;
+  font-size: 35px;
+  padding: 10px;
+  font-family: "ralewaysemibold";
+  background-color: #222222;
+  color: white;
+  margin-top: 5px;
+  margin-left: 55px;
+  margin-right: 55px;
+}
+#contnosotros #textnosotros {
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(209, 209, 209, 0.89);
+  border-top: none;
+  text-align: center;
+  padding: 30px;
+  color: #222222;
+  padding-top: 40px;
+}
+#contnosotros #textnosotros p {
+  margin-top: 25px;
+}
+
+#mapa {
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-top: 25px;
+}
+
+#formulario {
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-top: 25px;
+  border: 1px solid rgba(209, 209, 209, 0.89);
+  margin-bottom: 25px;
+}
+#formulario h2 {
+  text-align: center;
+  font-size: 35px;
+  padding: 10px;
+  font-family: "ralewaysemibold";
+  background-color: #222222;
+  color: white;
+}
+#formulario form input {
+  display: block;
+  margin: auto;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 4px;
+  text-align: center;
+}
+
+#formulario form {
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+#formulario label {
+  font-family: "ralewaysemibold";
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+::placeholder {
+  color: #31a3dd;
+  font-weight: bold;
+}
+
+input:focus {
+  box-shadow: 0px 0px 5px #31a3dd inset;
+}
+
+input[type="submit"] {
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #31a3dd;
+  border: solid 1px #ededed;
+  padding: 10px !important;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+  background-color: #5ab2dd;
+  color: white;
+}
+form textarea {
+  display: block;
+  margin: 0px auto;
+}
+
+#pieform {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid rgba(209, 209, 209, 0.89);
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.contactotel {
+  color: #222222;
+  font-family: "ralewaysemibold";
+}
+.contactonumero {
+  font-family: "ralewaysemibold";
+  color: #5ab2dd;
+  margin-left: 10px;
+}
+textarea {
+  width: 80%;
+}
+@media (max-width: 1024px) {
+  #header #logot a h3 {
+    width: 60px;
+    margin: auto;
+  }
+  #header #barr ul a li {
+    font-size: 15px;
+  }
+  #header {
+    margin-bottom: 10px;
+  }
+  #formulario {
+    border: none;
+  }
+}
+@media (max-width: 750px) {
+  #banner {
+    height: 200px;
+  }
+  #banner .img1 {
+    height: 198px;
+  }
+  #banner img {
+    height: 200px;
+  }
+
+  #banner .img1 h1 {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 30px;
+  }
+  #banner .img1 h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  #header {
+    display: block;
+    margin-bottom: 150px;
+    text-align: center;
+  }
+  #header #logot a h3 {
+    width: 60px;
+    margin: auto;
+  }
+  #header #barr ul {
+    justify-content: center;
+  }
+  #contenvios {
+    margin-top: 20px;
+  }
+  #contnosotros {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  #header {
+    display: block;
+    height: 190px;
+    text-align: center;
+  }
+  #header #logot a h3 {
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 80px;
+    margin: 0px auto;
+  }
+  #header #barr ul a li {
+    font-size: 15px;
+    padding-right: 9px;
+    padding-left: 9px;
+  }
+  #header {
+    margin-bottom: 10px;
+  }
+  #banner {
+    margin-left: 28px;
+    margin-right: 28px;
+    height: 120px;
+  }
+  #banner img {
+    width: 50%;
+    height: 120px;
+  }
+
+  #menu a .articulo p {
+    margin-top: 0px;
+  }
+  #menu a .articulo #cajatext p {
+    display: none;
+  }
+  #cajatext {
+    height: 0%;
+  }
+  #menu a .articulo {
+    height: 143px;
+  }
+  #menu {
+    height: 143px;
+  }
+  #cajasim {
+    height: auto;
+  }
+  footer {
+    display: block;
+  }
+  .pies {
+    width: 98%;
+    padding: 1%;
+    text-align: center;
+    margin-left: 0px;
+  }
+  #pie1 {
+    display: none;
+  }
+  #pie2 {
+    display: none;
+  }
+  #contenidoenvios {
+    display: block !important;
+  }
+  #contenidoenvios img {
+    width: 300px;
+    height: 200px;
+  }
+  #contenvios #contenidoenvios h3 {
+    margin-top: 10px;
+  }
+  #contenvios #contenidoenvios #textenvio p {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  #formulario form input {
+    width: 218px;
+  }
+  form textarea {
+    width: 266px;
+  }
+  #banner .img1 {
+    height: 118px;
+  }
+  #banner .img1 h1 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  #banner .img1 h2 {
+    margin-top: 0px;
+    font-size: 12px;
+  }
+  #contenvios {
+    margin-top: 15px;
+  }
+  #contnosotros {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 375px) {
+  #header #barr ul a li {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  #contenidoenvios img {
+    width: 260px;
+    height: 200px;
+  }
+  form textarea {
+    width: 230px;
+  }
+  #menu {
+    height: 464px;
+    display: block;
+    margin-top: 5px;
+  }
+  #menu .articulo {
+    margin-top: 10px;
+  }
+  #contenvios {
+    margin-top: 15px;
+  }
+  #contnosotros {
+    margin-top: 15px;
+  }
+  #formulario {
+    border: none;
+  }
+}
+
+@media (max-width: 360px) {
+  #header #barr ul a li {
+    padding-right: 2px;
+  }
+  #formulario form input {
+    width: 196px;
+  }
+  form textarea {
+    width: 208px;
+  }
+  #contenvios {
+    margin-top: 15px;
+  }
+  #contnosotros {
+    margin-top: 15px;
+  }
+  #pieform > p {
+    font-size: 14px;
+  }
+  #formulario {
+    border: none;
+  }
+}
+
+@media (max-width: 325px) {
+  #banner .img1 {
+    height: 118px;
+  }
+  #banner .img1 h1 {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+  #banner .img1 h2 {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  #contenvios {
+    margin-top: 15px;
+  }
+  #contnosotros {
+    margin-top: 15px;
+  }
+  #pieform > p {
+    font-size: 12px;
+  }
+  #formulario {
+    border: none;
+  }
+}

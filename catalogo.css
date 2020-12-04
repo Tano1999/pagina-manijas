@@ -1,0 +1,407 @@
+#cabeza h2 {
+  text-align: center;
+  font-size: 35px;
+  padding: 10px;
+  font-family: "ralewaysemibold";
+  background-color: #222222;
+  color: white;
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-top: 15px;
+}
+
+#bannercatalogo {
+  margin-left: 55px;
+  margin-right: 55px;
+  display: flex;
+}
+#bannercatalogo img {
+  width: 50%;
+  height: 120px;
+}
+
+#catalogo > ul {
+  margin-left: 55px;
+  margin-right: 55px;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#catalogo > ul > li {
+  padding: 10px;
+  margin: 15px;
+  color: #222222;
+  box-shadow: 0px 0px 10px rgb(192, 191, 191);
+}
+#catalogo > ul > li > img {
+  width: 200px;
+  height: 220px;
+  display: block !important;
+  padding: 5px;
+}
+#catalogo > ul > li > ul {
+  position: absolute;
+  z-index: 1;
+  margin-left: -10px;
+  margin-top: -265px;
+  width: 230px;
+}
+
+#catalogo > ul > li > ul > li {
+  padding: 10px;
+  background-color: rgb(39, 39, 39);
+  font-size: 15px;
+}
+#catalogo > ul > li > ul > li:first-child {
+  margin-top: 40px;
+}
+ul > li {
+  cursor: pointer;
+  font-size: 21px;
+  color: white;
+  font-family: "ralewaysemibold";
+}
+
+#catalogo > ul > li:hover {
+  background-color: #37bbf9;
+  box-shadow: 0px 0px 4px white inset;
+  color: white;
+  box-shadow: 0px -3px 5px rgb(117, 116, 116);
+}
+
+#catalogo > ul > li > ul > li:hover {
+  background-color: #37bbf9;
+  text-shadow: 0px 0px 2px black;
+  box-shadow: 0px 0px 4px white inset;
+}
+
+.productos {
+  display: none;
+  cursor: pointer;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+#modal {
+  color: white;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  right: 50px;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.938);
+  display: none;
+}
+#modal h2 {
+  text-align: center;
+  padding: 30px;
+}
+#modal #cruz {
+  position: fixed;
+  right: 50px;
+  top: 50px;
+  width: 50px;
+  padding: 10px;
+  font-size: 40px;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+#modal #cruz:hover {
+  color: white;
+  text-shadow: 0px 0px 10px white;
+  box-shadow: 0px 0px 5px red inset;
+  background-color: rgba(255, 0, 0, 0.322);
+  cursor: pointer;
+}
+#modal #contenidomodal {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+#modal #contenidomodal table {
+  margin: 0 auto;
+  font-size: 18px;
+  height: 350px;
+  margin: 20px;
+  overflow-y: auto;
+  display: block;
+  width: auto;
+  text-align: center;
+}
+#modal #contenidomodal img {
+  min-width: 150px;
+  max-width: 36%;
+  max-height: 430px;
+  margin: 10px;
+}
+
+.table {
+  width: 300px;
+  margin-left: 40px;
+  font-size: 12px;
+}
+
+.n°producto {
+  text-align: center;
+  font-size: 16px;
+}
+.estilo {
+  text-align: center;
+  font-size: 16px;
+}
+th {
+  padding: 5px;
+}
+tr:hover {
+  background-color: #37bbf9c5;
+  cursor: pointer;
+}
+
+@media (max-width: 848px) {
+  #header {
+    display: block;
+    height: 211px;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  #pie2 {
+    display: none;
+  }
+  #header #barr ul {
+    place-content: center;
+  }
+  #barr {
+    width: 100%;
+  }
+  #bannercatalogo > img {
+    width: 50%;
+    height: 140px;
+  }
+
+  #modal #contenidomodal table {
+    font-size: 16px;
+    height: 220px;
+  }
+
+  #modal h2 {
+    text-align: center;
+    padding: 25px;
+    font-size: 25px;
+  }
+}
+@media (max-width: 690px) {
+  #modal #contenidomodal table {
+    font-size: 14px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  #catalogo > ul > li {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  #cabeza h2 {
+    margin-left: 28px;
+    margin-right: 28px;
+  }
+  #catalogo > ul {
+    margin-left: 25px;
+    margin-right: 6px;
+  }
+  #bannercatalogo img {
+    width: 50%;
+    height: 77px;
+  }
+  #bannercatalogo {
+    height: 97px;
+    margin-left: 28px;
+    margin-right: 28px;
+  }
+  #catalogo > ul > li > ul {
+    margin-top: -266px;
+    width: 229px;
+    height: 275px;
+  }
+  #catalogo > ul > li > ul > li {
+    font-size: 12px;
+  }
+  #modal {
+    height: 390px;
+  }
+
+  #modal #contenidomodal table {
+    font-size: 13px;
+    height: 200px;
+  }
+  #modal h2 {
+    text-align: center;
+    font-size: 23px;
+  }
+}
+@media (max-width: 550px) {
+  #modal {
+    height: 320px;
+  }
+
+  #modal #contenidomodal table {
+    font-size: 12px;
+    height: 160px;
+  }
+  #modal h2 {
+    text-align: center;
+    font-size: 21px;
+  }
+}
+@media (max-width: 500px) {
+  #modal #contenidomodal {
+    display: block;
+    text-align: center;
+    height: 400px;
+  }
+  #modal {
+    top: 40px;
+    height: 490px;
+  }
+  #modal #cruz {
+    top: 40px;
+  }
+  #modal #contenidomodal table {
+    font-size: 12px;
+    height: 110px;
+    margin: auto;
+  }
+  #modal #contenidomodal img {
+    /* width: 40%;*/
+    margin: 30px;
+  }
+}
+
+@media (max-width: 420px) {
+  #cabeza h2 {
+    margin-left: 28px;
+    margin-right: 28px;
+  }
+  #bannercatalogo {
+    height: 110px;
+  }
+  #bannercatalogo img {
+    height: 90px !important;
+  }
+  #catalogo > ul {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  #catalogo > ul > li {
+    margin-left: 0px;
+  }
+  #catalogo > ul > li > img {
+    width: 139px;
+    height: 147px;
+  }
+  #catalogo {
+    height: 2200px;
+  }
+  #catalogo > ul > li > ul {
+    margin-top: -191px;
+    width: 169px;
+    height: 200px;
+  }
+  #bannercatalogo img {
+    height: 70px !important;
+  }
+  #modal #modalname {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+  }
+  #modal #contenidomodal {
+    height: 375px;
+  }
+  #contenidomodal img {
+    /*width: 50%;*/
+    margin: 30px;
+  }
+  .table {
+    width: 270px;
+    margin: 20px;
+  }
+  #modal #contenidomodal table {
+    font-size: 12px;
+    height: 110px;
+    margin: auto;
+  }
+  #modal {
+    left: 15px;
+    right: 15px;
+  }
+  #modal #cruz {
+    right: 15px;
+  }
+}
+@media (max-width: 375px) {
+  #catalogo > ul > li > img {
+    width: 100px;
+    height: 117px;
+  }
+  #catalogo > ul > li {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 13px;
+  }
+  #catalogo > ul {
+    margin-left: 28px;
+    margin-right: 14px;
+  }
+  #catalogo > ul > li > ul {
+    margin-top: -182px;
+    width: 130px;
+    height: 191px;
+  }
+  #catalogo > ul > li > ul > li {
+    font-size: 12px;
+  }
+  #catalogo > ul > li > ul > li p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 320px) {
+  #catalogo > ul > li > img {
+    width: 99px;
+    height: 111px;
+  }
+  #catalogo > ul > li {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  #catalogo > ul {
+    margin-left: 28px;
+    margin-right: 14px;
+  }
+  #catalogo > ul > li > ul {
+    margin-top: -182px;
+    width: 130px;
+    height: 191px;
+  }
+  #catalogo > ul > li > ul > li {
+    font-size: 11px;
+  }
+  #catalogo > ul > li > ul > li p {
+    font-size: 11px;
+  }
+}
+#backgroundOverlay {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}

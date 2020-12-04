@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Mani Plast SRL</title>
+    <link rel="icon" type="img/png" href="imgs/logos/log2.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <img class="logoplast" src="img/mainsrl2.png" alt="maniplastsrl" />
+      <div id="logot">
+        <a href="index.html">
+          <h3>Inicio</h3>
+        </a>
+      </div>
+      <div id="barr">
+        <ul>
+          <a href="catalogo.html"><li>CATÁLOGO</li></a>
+          <a href="envios.html"><li>ENVÍOS</li></a>
+          <a href="nosotros.html"><li>NOSOTROS</li></a>
+          <a href="contacto.html"><li>CONTACTO</li></a>
+        </ul>
+      </div>
+    </header>
+    <div id="mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3282.200206144131!2d-58.45730606292584!3d-34.649646486012124!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbda103de65f%3A0x626f0bc18623d5b4!2sBalbastro%203089%2C%20C1437%20CABA!5e0!3m2!1ses!2sar!4v1595380832438!5m2!1ses!2sar"
+        width="100%"
+        height="250"
+        frameborder="0"
+        style="border: 0;"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+    </div>
+    <div id="formulario">
+      <h2>Contáctenos</h2>
+      <form
+        action="enviar_formulario.php"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <label>Nombre</label>
+        <input
+          maxlength="50"
+          name="nombre"
+          required
+          size="50"
+          type="text"
+          autofocus
+        />
+        <label>Email</label>
+        <input name="mail" required type="email" />
+        <label>Teléfono</label>
+        <input name="telefono" required type="number" />
+        <label>Consulta</label>
+        <textarea name="mensaje" rows="8" required> </textarea>
+        <input type="submit" value="Enviar" />
+      </form>
+      <div id="pieform">
+        <p class="contactotel">Contáctenos también vía telefónica:</p>
+        <p class="contactonumero">
+          (011) 4615-8876
+        </p>
+        <p class="contactonumero">
+          11 6144-9080
+        </p>
+        <p class="contactonumero">
+          11 5995-3692
+        </p>
+      </div>
+    </div>
+
+    <footer id="pie">
+      <div class="pies" id="pie1">
+        <h2>MENÚ</h2>
+        <ul>
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="nosotros.html">NOSOTROS</a></li>
+          <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+      </div>
+      <div class="pies" id="pie2">
+        <h2>¿DÓNDE ESTAMOS?</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.2039537968285!2d-58.45784586482937!3d-34.64955182840331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbda103de65f%3A0x626f0bc18623d5b4!2sBalbastro%203089%2C%20C1437%20CABA!5e0!3m2!1ses!2sar!4v1593394569678!5m2!1ses!2sar"
+          width="250"
+          height="250"
+          frameborder="0"
+          style="border: 0;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+      <div class="pies" id="pie3">
+        <h2>EMPRESA MAYORISTA LIDER EN RUBRO</h2>
+        <img class="gif" src="imgs/logos/manigif2.gif" />
+
+        <h2>AUTOR</h2>
+        <p>&copy;Copyright 2020 - Tomas Palmitano</p>
+      </div>
+    </footer>
+  </body>
+</html>
